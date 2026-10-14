@@ -1,0 +1,1 @@
+- [Java source-file launcher](java-source-launcher.md) — with multiple top-level classes, `java file.java` may choose the first one; compile, then run the intended class.
