@@ -1,5 +1,8 @@
+import modelos.Pessoa;
+
 public class main{
   public static void main(String args[]){
-    System.out.println("Teste");
+    Pessoa ana = new Pessoa("Ana da Silva", 17, (float) 1.70);
+    System.out.println(ana.apresentar());
   }
 }

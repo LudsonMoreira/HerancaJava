@@ -29,7 +29,7 @@ outputType = "console"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "if [ ! -s main.java ]; then echo 'main.java is empty. Add a class with a main method, then run again.'; else javac main.java && java main; fi"
+args = "if [ ! -s main.java ]; then echo 'main.java is empty. Add a class with a main method, then run again.'; else rm -f main.class modelos/Pessoa.class && javac main.java modelos/Pessoa.java && java main; fi"
 
 [agent]
 stack = "PNPM_WORKSPACE"
